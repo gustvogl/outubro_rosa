@@ -1,0 +1,103 @@
+/* ===== Segunda Tela ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.segunda-tela {
+    background-color: #ffb6c1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 900px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+/* ===== Logo e texto ===== */
+.logo-area {
+    text-align: center;
+    color: #8b004b; /* Rosa escuro para contraste */
+}
+
+.logo-area img {
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+.logo-area h2 {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+.logo-area p {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* ===== Botões ===== */
+.botoes-area {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.botoes-area button {
+    background-color: white;
+    color: #333;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: left;
+    width: 280px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+}
+
+.botoes-area button:hover {
+    background-color: #ffe4e9;
+    transform: scale(1.02);
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 768px) {
+    .info-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .botoes-area {
+        align-items: center;
+    }
+
+    .botoes-area button {
+        width: 90%;
+        text-align: center;
+    }
+
+    .logo-area img {
+        width: 120px;
+    }
+
+    .logo-area h2 {
+        font-size: 1.8rem;
+    }
+}
