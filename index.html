@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outubro Rosa - Carregando</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Tela de carregamento -->
+  <div class="container">
+    <div class="content">
+      <img src="img/Logotipo outubro rosa mês de prevenção ao câncer de mama.png" alt="Logo Outubro Rosa">
+      <div class="loader"></div>
+    </div>
+    <div class="wave"></div>
+  </div>
+
+  <!-- Tela inicial -->
+  <div class="inicio">
+    <div class="inicio-content">
+      <img src="img/Logotipo outubro rosa mês de prevenção ao câncer de mama.png" alt="Logo Outubro Rosa">
+      <p></p>
+      <a href="inicio.html" class="botao" >Entrar</a>
+    </div>
+    <div class="wave"></div>
+  </div>
+
+  <script>
+    // Começa com a tela inicial invisível
+    document.querySelector('.inicio').style.display = 'none';
+
+    // Faz a animação de sumir da tela de carregamento
+    setTimeout(() => {
+      document.querySelector('.container').classList.add('fade-out');
+    }, 8000);
+
+    // Troca para a tela de início
+    setTimeout(() => {
+      document.querySelector('.container').style.display = 'none';
+      document.querySelector('.inicio').style.display = 'flex';
+      document.querySelector('.inicio').classList.add('fade-in');
+    }, 10000);
+  </script>
+</body>
+</html>
